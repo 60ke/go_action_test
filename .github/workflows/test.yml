@@ -11,7 +11,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: "386"
         GOOS: linux
         CMD_PATH: "go build ."
@@ -24,7 +24,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: amd64
         GOOS: linux
         CMD_PATH: "go build ."
@@ -37,7 +37,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: "arm"
         GOOS: linux
         CMD_PATH: "go build ."
@@ -50,7 +50,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: arm64
         GOOS: linux
         CMD_PATH: "go build ."
@@ -63,7 +63,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: amd64
         GOOS: darwin
         CMD_PATH: "go build ."
@@ -76,7 +76,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: "386"
         GOOS: windows
         CMD_PATH: "go build ."
@@ -89,7 +89,7 @@ jobs:
     - name: compile and release
       uses: ngs/go-release.action@v1.0.1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
         GOARCH: amd64
         GOOS: windows
         CMD_PATH: "go build ."
