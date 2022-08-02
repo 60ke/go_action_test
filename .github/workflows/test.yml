@@ -1,9 +1,9 @@
 # .github/workflows/release.yaml
 on:
   push:
-    branches: [ "tm_contract" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "tm_contract" ]
+    branches: [ "main" ]
 name: Build Release
 jobs:
   release-linux-386:
